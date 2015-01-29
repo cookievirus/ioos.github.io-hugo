@@ -1,39 +1,78 @@
-{{ template "chrome/head.html" . }}
-<body>
+{{ partial "default_head.html" . }}
 
-{{ template "chrome/sidebar.html" . }}
-
-    <div class="content container">
-
+  <div class="content container">
 	<div class="posts">
+      <div class="post">
 
-	{{ range .Data.Pages }}
-	{{ end }}
- 
-  <div class="post">
+ 	    {{ range first 1 .Data.Pages }}
+        	{{ if eq .RelPermalink "index.html" }} 
+                <h1 class="post-title">{{ .Title }}</h1>
+                <div id="toc" class="well col-md-4 col-sm-6"> {{ .TableOfContents }} </div>
+				{{ .Content }}
+			{{else}}
+                <h2><a href='{{ .Permalink }}'> {{ .Title }} </a> </h2>
+				{{ .Summary }} 
+				<footer>
+					<a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{end}}
+		{{ end }}
+<!--
+ 	    {{ range first 1 .Data.Pages }}
+           <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
+        	{{ if eq .RelPermalink "/[REPOSITORY_NAME_HERE]/index.html" }} 
+				{{ .Content }}
+				<footer>
+					<a href='./[MARKDOWN_FILE_NAME_HERE]/'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{else}}
+				{{ .Summary }} 
+				<footer>
+					<a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{end}}
+		{{ end }}
+-->
+<!--
+ 	    {{ range .Data.Pages }}
+           <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
+        	{{ if eq .RelPermalink "/[REPOSITORY_NAME_HERE]/index.html" }} 
+				{{ .Content }}
+				<footer>
+					<a href='./[MARKDOWN_FILE_NAME_HERE]/'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{else}}
+				{{ .Summary }} 
+				<footer>
+					<a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{end}}
+		{{ end }}
+-->
+<!--
+ 	    {{ range .Data.Pages }}
+           <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
+        	{{ if eq .RelPermalink "/animal-telemetry/index.html" }} 
+				{{ .Content }}
+				<footer>
+					<a href='./animal-telemetry/'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{end}}
+		{{ end }}
+-->
+<!--
+ 	    {{ range .Data.Pages }}
+           <h2><a href='{{ .Permalink }}'>{{ .Title }}</a> </h2>
+        	{{ if eq .RelPermalink "/animal-telemetry/index.html" }} 
+				{{ .Summary }} 
+				<footer>
+					<a href='./animal-telemetry/'><nobr><i>Read more ></i></nobr></a>
+				</footer>
+			{{end}}
+		{{ end }}
+-->		
+ 	  </div>
+    </div>
+  </div>
 
-	{{ range .Data.Pages }}
-
-    <header>
-      <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
-    <!--  <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div> -->
-    </header>
-
-	{{ if ( eq .RelPermalink "/" ) }} 
-		{{ .Content }}
-	{{end}}
-
-    <footer>
-        <!--a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a-->
-    </footer>
-
-	{{ end }}
-
-	</div>
-
-
-</div>
-
-
-  </body>
-</html>
+{{ partial "default_foot.html" . }}

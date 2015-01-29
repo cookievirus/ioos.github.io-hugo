@@ -1,10 +1,23 @@
 baseurl = "http://ioos.github.io"
-languageCode = "en-us"
-title = "IOOS GitHub Site" 
+CanonifyUrls = true
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
+languageCode = "en-us"
 [params]
- Description = "Collection of IOOS documentation and software"
- Copyright = "(c) 2014 Integrated Ocean Observing System. Rights reserved."
+  Title = "IOOS GITHUB PAGES"
+  Tagline = "Entry point for technical documentation"
+[params.Github]
+  Head = "new-website"
+  Url = "https://github.com/ioos/ioos.github.io"
+[[menu.extramedia]]
+    name = ""
+    url = ""
+    weight = -110
+    identifier = ""
+[[menu.extramedia]]
+    name = ""
+    weight = -200
 
+	
+ 
