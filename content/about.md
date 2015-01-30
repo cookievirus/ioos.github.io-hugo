@@ -67,6 +67,7 @@ A collection of the Instructions and Guidelines for use of Controlled Vocabulari
  
 * A brief [description](http://ioos.github.io/animal-telemetry/about/) of the National Animal Telemetry Network (ATN). 
 * [Strategic Plan And Recommendations](http://ioos.github.io/animal-telemetry/animal-telemetry-plan/) for a National ATN through U.S. IOOS
+* [A Metadata Convention for Passive Acoustic Recordings](http://abirger.github.io/animal-telemetry/passive-acoustic/) version 1.0.
 
 ## Biological Data Services 
 
