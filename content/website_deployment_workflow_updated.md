@@ -4,7 +4,7 @@ type = "post"
 draft = false
 sidebar = true
 date = 2014-03-04T07:56:39Z
-title = "Deployment of IOOS Websites on GitHub"
+title = "Hosting on IOOS GitHub Pages Workflow"
 
 +++
 
@@ -199,102 +199,41 @@ The  _**Hugo**_ IOOS DMAC Documentation website can be created from any GitHub d
 The command _**hugo server --watch**_ starts a web server available at "**http://localhost:1313/repository-name/**", generates website content in the `./public` directory,  watches source files for changes, recreates the web content as needed, and automatically reload any open pages in browser. After the website development and debugging is completed, the final version of the site should be deployed on GitHub Pages. 
 
 
-## Deploy with a Git Subtree Mirroring
+## Deploy the Site to GitHub Pages
 
-GitHub Pages will serve up a website for any repository that has a branch called `gh-pages` with a valid `index.html` file at that branch's root. To keep an adequate separation between the `master` and `gh-pages` branches, and at the same time make a deployment process visual and simple, the developers of _**Hugo**_ suggested a workflow that is based on use of the `git subtree` family of commands. It allows to mirror the entire `public` directory (which contains the generated website) into the root of the `gh-pages` branch of the repository. As a result, all content modification can be done on the `master` branch, and after _**Hugo**_ has generated the site output into the `public` directory it can be pushed directly to the correct place for GitHub Pages to serve the website. _**Hugo**_  ["_Hosting on GitHub Pages_"](http://gohugo.io/tutorials/github_pages_blog/) tutorial provides a detailed step-by-step description, and the following is a condensed and adapted to the IOOS case version of that workflow: 
+GitHub Pages will serve up a website for any project repository that has a branch called `gh-pages` with a valid `index.html` file at that branch's root. For the organization/user repository (e.g. `ioos.github.io`), however, the GitHub Pages serve content of the `master` branch itself. That may make a deployment of the generated website to GitHub a convoluted process, and unnecessary clutter up the default and deploy repository branches. 
 
-```
-    1. Create a new orphand branch (no commit history) named gh-pages
-         git checkout --orphan gh-pages
+A simple and visual deployment workflow based on the _**Hugo's**_  ["_Hosting on GitHub Pages_"](http://gohugo.io/tutorials/github_pages_blog/) tutorial helps untangle the deployment process, and keep an adequate separation between the default and deploy branches. The workflow allows a direct push of the entire content of the generated website to the correct remote repository's branch. It does not stipulate for the commit of generated files to the remote default branch, does not make superfluous commits or deploys when the generated files do not change, and allows keeping a linear history on the deploy branch. 
 
-    2. Unstage all files
-        git rm --cached $(git ls-files)
-
-    3. Grab one file from the master branch so we can make a commit
-        git checkout master README.md
-
-    4. Add and commit that file
-        git add README.md
-        git commit -m "INIT: initial commit on gh-pages branch"
-
-    5. Push to remote gh-pages branch 
-        git push origin gh-pages
-
-    6. Return to master branch
-        git checkout master
-
-    7. Remove the public folder to make room for the gh-pages subtree
-        rm -rf public        
-
-    8. Add the gh-pages branch of the repository. It will look like a folder named public
-        git subtree add --prefix public git@github.com:[some-repository-name].git gh-pages --squash
-
-    9. Pull down the file we just committed (totally optional step but helps avoid merge conflicts)
-        git subtree pull --prefix=public
-
-    10. Run Hugo. Generated site will be placed in public directory
-         hugo
-
-    11. Add everything
-         git add -A
-
-    12. Commit and push to master
-         git commit -m "Updating site" 
-         git push origin master
-
-     13. Push the public subtree to the gh-pages branch
-          git subtree push --prefix=public git@github.com:[some-repository-name].git gh-pages
-```
-
-After initial deployment, any update of the website would include steps 10 through 13 apart from the creation/update of the content and verification of the generated website. These 4 steps are the same every time content is added or modified. It would be much easier, if that repetitive process is automated with some sort of script. A couple of Linux Bash scripts was developed by Dana Woodman for the [Chimer Arta & Maker Space](https://github.com/chimera/chimeraarts.org) website to automate [preview](https://github.com/chimera/chimeraarts.org/blob/master/preview) and [publish](https://github.com/chimera/chimeraarts.org/blob/master/publish) processes. The latter script was then adopted by Spencer Lyon, and modified into [`deploy.sh`](https://github.com/spencerlyon2/hugo_gh_blog/blob/master/deploy.sh). That script allows to replace the last four items from the above workflow list with a single command `bash deploy.sh`. 
-
-_**NOTES:**_
-
->1. The workflow was developed for Linux. On Windows, some command either have to be modified (e.g. `rm -rf` to `rmdir c:\test /s /q`), or Linux native commands can be used with the Linux [CoreUtils](http://gnuwin32.sourceforge.net/packages.html) installed.
->2. To allow running Bash scripts on Windows, some Bash shell software for Windows has to be installed. For example, Bash shell is included into a standard [GitHub for windows](https://windows.github.com/) installation package.
->3. All `git` commands have to be run from the site `<root>` directory, i.e. the directory, where the `content` (or another directory defined as `contentdir`) and `layout` sub-directories are located). 
->4. The `[some-repository-name]` has to be changed to the real repository GitHub address, e.g. `ioos/sos-guidelines`. 
-
-## Deploy with an Uncluttered Alternate Approach
-
-The above workflow works just great, and it had been used for a while for IOOS Git Pages deployment; however, it has a drawback: it requires the generated content of the `publishdir` to be committed to the source (`master`) branch. As a result, the `master` branch becomes cluttered up with the files generated by _**Hugo**_ that are only required on the `gh-pages` branch. 
-
-A [different approach](http://gohugo.io/tutorials/github-pages-blog#toc_9) has been developed recently, which unlike the `git-subtree` one does not require to commit the generated files to the `master` branch. It keeps a linear history on the deploy branch and does not make superfluous commits or deploys when the generated files do not change.
-
-For this approach, the Bash [script](https://github.com/X1011/git-directory-deploy) was developed that renders automatic almost all deployment process: the script takes care of everything apart from generating the website with _**Hugo**_; it can even create the `gh-pages` branch of the repository if it does not exist. Although the script requires some initial configuration, the IOOS documentation GitHub Pages are so simple and highly similar that it can be used for each of them without any modification. From now on, the script `deploy.sh` is included into the IOOS _**Hugo**_ website skeleton set, and can be downloaded from any IOOS documentation repository.
+The core element of the workflow is the Bash [script](https://github.com/X1011/git-directory-deploy) `deploy.sh` that renders automatic the deployment process apart from generating the website with _**Hugo**_: it creates a deploy branch of the remote repository, and commits the website content to it. Although the script requires some initial configuration, the IOOS documentation GitHub Pages are so simple and highly similar that it can be used for each of them without any modification; each repository includes the pre-configured copy of the script. 
 
 With this script, the deployment process can be reduced to a few steps:
 
-### configuration 
+### _configuration_
 
 Edit the following variables within the script as needed to fit the project:
-
- - `deploy_directory`: root of the tree of files to deploy. For IOOS websites the value is always **`public`**
- - `deploy_branch`: branch to commit files to and push to origin:
-   * for the root `ioos.github.io` site, the value must be **`master`**
-   * for all other projects the value must be **`gh-pages`**
- - `default_username`, `default_email`: identity to use for git commits if none is set already. Usually no need to set up
+ 
+ - `deploy_directory`: root of the tree of files to deploy; must match the value of the `publishdir` in the [site config file](#toc_3). For IOOS websites the value is always `public`. 
+ - `deploy_branch`: branch to commit files to and push to origin. For projects the value is `gh-pages`.
+ - `default_username`, `default_email`: identity to use for git commits if none is set already. Usually no need to set up.
  - `repo`: repository to deploy to (must be readable and writable). If script runs in the `repo` root directory, the variable sets up automatically. 
 
-### setup
+### _setup_
 
- Ensure configuration variables are correct in the script and run 
+Ensure configuration variables are correct in the script and run 
 
- &nbsp; &nbsp; <b>`deploy.sh -s`</b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  _**deploy.sh -s**_
 
 Option `-s` or `--setup` makes the script perform one-time setup to prepare the repository for deployments: creates `deploy_branch` (i.e. `gh-pages`), initializes it with the contents of `deploy_directory` (i.e. `public`), and pushes it to remote repository.
 
-If the `deploy_branch` exists, running the script with a setup option will fail. Since `master` branch is always an integral part of any repository, this option should not be used for `ioos.github.io`.  
 
-### run
+### _run_
 
 Do the following every time you want to deploy:
  
- - check out the **default** branch or commit of the source (useful if somebody else might make changes to the source that you are not aware of); the script will use this commit to generate a message when it makes its own commit on the `deploy branch`
-    * for `ioos.github.io` site, the default branch is **`new-website`**
-    * for all other project websites, the default branch is **`master`**  
- - generate the files in `deploy_directory` (i.e. `publish`). Just run _**Hugo**_.
- - make sure no uncommitted changes left in git's index, otherwise the script will abort (it is OK to have uncommitted files in the work tree; the script does not touch the work tree).
+ - check out the `master` branch or commit of the source (useful if somebody else might make changes to the source that you are not aware of). The script will use this commit to generate a message when it makes its own commit on the deploy branch.
+ - run _**Hugo**_ without options to generate the files in `deploy_directory` (i.e. `publish`).
+ - make sure no uncommitted changes left in git's index, otherwise the script will abort. Although it is OK to have uncommitted files in the work tree as the script does not touch the work tree, it is strongly recommended to commit and push all changes to the remote default branch before running the script.
  - make sure you are in the project's root directory
  - run `deploy.sh` with or without any of the following options:
     * `-v` or `--verbose` echo commands as they are executed; it is recommended for debugging if something goes wrong;
@@ -303,6 +242,7 @@ Do the following every time you want to deploy:
 
 _**NOTES:**_
 
->1. Because of the differences described above, the script for the `ioos.github.io` is also different; to distinguish the script for the `ioos.github.io` from the others, it has been renamed to `deploy-io.sh`.
->2. To allow running `deploy.sh` script on Windows, some Bash shell software for Windows has to be installed. For example, Bash shell is included into a standard [GitHub for windows](https://windows.github.com/) installation package.
->3. The above procedure assumes that the script runs from the site `<root>` directory, i.e. the directory, where the `content` (or another directory defined as `contentdir`) and `layout` sub-directories are located).
+>1. To allow running Bash scripts on Windows, some Bash shell software for Windows has to be installed. For example, Bash shell is included into a standard [GitHub for windows](https://windows.github.com/) installation package.
+>2. The above procedure assumes that the script runs from the site `<root>` directory, i.e. the directory, where the `content` (or another directory defined as `contentdir`) and `layout` sub-directories are located). 
+>3. As GitHub Pages render the organization/user sites in a different way, the `deploy_branch` value for the `ioos.github.io` repository must be `master` instead of `gh-pages` (for the same reason, a `new-website` branch has been set up as the default working branch instead of `master`). To avoid confusion,  the name of the pre-configured script for the `ioos.github.io` site has changed to `deploy-io.sh`.  
+
