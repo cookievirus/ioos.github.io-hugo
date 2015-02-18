@@ -59,9 +59,9 @@ The _**IOOS Convention for observation data encoding in CSV/TSV**_ document desc
 
 The _**IOOS Conventions for Observing Asset Identifiers**_ document describes the conventions used by the Integrated Ocean Observing System (IOOS) program to assign an identifier to IOOS-related observing assets including measurement stations, platforms and sensors.
 
-## [Vocabularies](https://ioos.github.io/vocabularies)
+## [Vocabularies](https://github.com/ioos/vocabularies)
 
-A collection of the Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services.
+A collection of the Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services. The link temporarily leads to the GitHub repository itself rather then to the GitHub Pages.
 
 ## [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
  
