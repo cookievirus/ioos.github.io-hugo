@@ -6,7 +6,7 @@ publishdir = "public"
 languageCode = "en-us"
 [params]
   Title = "IOOS GITHUB PAGES"
-  Tagline = "Entry point for technical documentation"
+  Tagline = "Entry point for IOOS resources on GitHub"
 [params.Github]
   Head = "new-website"
   Url = "https://github.com/ioos/ioos.github.io"
