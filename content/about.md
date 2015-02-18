@@ -17,13 +17,13 @@ url = "index.html"
 * [IOOS Web Catalog](http://catalog.ioos.us)
 * [GitHub repository](https://github.com/ioos/) that holds source codes and modules of the IOOS Catalog
 
-## [System Integration Test](https://github.com/ioos/system-test)
+## System Integration Test
 
-The system integration test development site on github contains IPython notebooks demonstrating how to access data from servers in various scenarios. 
+The [system integration test development site](https://github.com/ioos/system-test) on github contains IPython notebooks demonstrating how to access data from servers in various scenarios. 
 
-## [ncSOS](https://github.com/asascience-open/ncSOS)
+## IOOS ncSOS
 
-NcSOS adds an OGC SOS service to datasets in your existing THREDDS server. It complies with the [IOOS SWE Milestone 1.0 templates](https://github.com/ioos/sos-guidelines/tree/master/template/milestone1.0) and requires your datasets be in any of the [CF 1.6 Discrete Sampling Geometries](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.6/build/cf-conventions.html#discrete-sampling-geometries).
+The [IOOS ncSOS](https://github.com/asascience-open/ncSOS) adds an OGC SOS service to datasets in your existing THREDDS server. It complies with the [IOOS SWE Milestone 1.0 templates](https://github.com/ioos/sos-guidelines/tree/master/template/milestone1.0) and requires your datasets be in any of the [CF 1.6 Discrete Sampling Geometries](http://cfconventions.org/Data/cf-conventions/cf-conventions-1.6/build/cf-conventions.html#discrete-sampling-geometries).
 
 ## i52N and related activities like sensor web harvesters
 
@@ -33,14 +33,14 @@ NcSOS adds an OGC SOS service to datasets in your existing THREDDS server. It co
 
 # Guidelines and specifications
 
-## [Data Provider Guidelines](http://www.ioos.noaa.gov/data/contribute_data.html)
+## Data Provider Guidelines
 
-The _**Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem**_ describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
+The [_**Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem**_](http://www.ioos.noaa.gov/data/contribute_data.html) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
 
 
-## [SOS Guidelines](http://ioos.github.io/sos-guidelines)
+## SOS Guidelines
 
-A website with documentation on using IOOS SOS v1.0 that includes:    
+A [website](http://ioos.github.io/sos-guidelines) with documentation on using IOOS SOS v1.0 that includes:    
 
 * [Overview of SOS activities in IOOS](http://ioos.github.io/sos-guidelines/about/)  
 * [IOOS SOS 1.0 Web Service Description Document](http://ioos.github.io/sos-guidelines/doc/wsdd/sos_wsdd_github_notoc/)   
@@ -51,27 +51,32 @@ A website with documentation on using IOOS SOS v1.0 that includes:
 * See [https://github.com/dpsnowden/netcdf-guidelines] for some initial ideas on what this needs to contain.
 * [IOOS Compliance Checker](https://github.com/ioos/compliance-checker) tool to check local/remote netCDF datasets against a variety of compliance standards. 
 
-## [Data encoding in CSV/TSV](http://ioos.github.io/ioos-csv-tsv/)
+## Data encoding in CSV/TSV
 
-The _**IOOS Convention for observation data encoding in CSV/TSV**_ document describes the rukes and constraints for encoding observation data as plain text Comma-Separated Values (CSV) or Tab-Separated Values (TSV).
+The [_**IOOS Convention for observation data encoding in CSV/TSV**_](http://ioos.github.io/ioos-csv-tsv/) document describes the rukes and constraints for encoding observation data as plain text Comma-Separated Values (CSV) or Tab-Separated Values (TSV).
 
-## [Asset Identifiers](http://ioos.github.io/conventions-for-observing-asset-identifiers/)
+## Asset Identifiers
 
-The _**IOOS Conventions for Observing Asset Identifiers**_ document describes the conventions used by the Integrated Ocean Observing System (IOOS) program to assign an identifier to IOOS-related observing assets including measurement stations, platforms and sensors.
+The [_**IOOS Conventions for Observing Asset Identifiers**_](http://ioos.github.io/conventions-for-observing-asset-identifiers/) document describes the conventions used by the Integrated Ocean Observing System (IOOS) program to assign an identifier to IOOS-related observing assets including measurement stations, platforms and sensors.
 
-## [Vocabularies](https://github.com/ioos/vocabularies)
+## Vocabularies
 
-A collection of the Instructions and Guidelines for use of Controlled Vocabularies in IOOS-compliant data services. The link temporarily leads to the GitHub repository itself rather then to the GitHub Pages.
+A [collection of the Instructions and Guidelines for use of Controlled Vocabularies](https://github.com/ioos/vocabularies) in IOOS-compliant data services (the link temporarily leads to the GitHub repository itself rather then to the GitHub Pages).
 
-## [Data Services for Animal Telemetry](http://ioos.github.io/animal-telemetry/)
- 
+## Data Services for Animal Telemetry
+
+A [collection](http://ioos.github.io/animal-telemetry/) of documents describing animal telemetry implementation: 
+
 * A brief [description](http://ioos.github.io/animal-telemetry/about/) of the National Animal Telemetry Network (ATN). 
 * [Strategic Plan And Recommendations](http://ioos.github.io/animal-telemetry/animal-telemetry-plan/) for a National ATN through U.S. IOOS
 * [A Metadata Convention for Passive Acoustic Recordings](http://abirger.github.io/animal-telemetry/passive-acoustic/) version 1.0.
 
 ## Biological Data Services 
 
-* [Data Enrollment Process](http://ioos.github.io/biological-data-services/) proposed and supported by IOOS DMAC to support sharing and integration of aquatic biological data.
+A [collection](http://ioos.github.io/biological-data-services/) of documents describing data services for biological objects:
+
+* [Data Enrollment Process](http://ioos.github.io/biological-data-services/biological-data-procedure/) proposed and supported by IOOS DMAC to support sharing and integration of aquatic biological data.
+* [IOOS Biological Observations Project](http://ioos.github.io/biological-data-services/biological-observations-project/) that addresses the DMAC requirements for biological observations standards and interoperability.
 
 # Contributing and changes
 
