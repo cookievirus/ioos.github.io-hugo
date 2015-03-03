@@ -5,7 +5,7 @@
       <div class="post">
 
  	    {{ range first 1 .Data.Pages }}
-        	{{ if eq .RelPermalink "index.html" }} 
+        	{{ if eq .RelPermalink "/index.html" }} 
                 <h1 class="post-title">{{ .Title }}</h1>
                 <div id="toc" class="well col-md-4 col-sm-6"> {{ .TableOfContents }} </div>
 				{{ .Content }}
