@@ -28,8 +28,9 @@ The [IOOS ncSOS](https://github.com/asascience-open/ncSOS) adds an OGC SOS servi
 ## i52N and related activities like sensor web harvesters
 
 *  [i52N-SOS](http://ioos.github.io/i52n-sos/), an IOOS customized build of the [52°North Sensor Observation Service (SOS)](http://52north.org/sos) that extends the stock upstream [52°North SOS](https://github.com/52North/SOS) with IOOS specific encoding formats, test data, and more.
-* [IOOS SOS Compliance Test Tool](https://github.com/ioos/ioos-sos-compliance-tests), a set of CTL ([compliance test language](http://portal.opengeospatial.org/files/?artifact_id=33085)) files and utility scripts to test IOOS SOS implementations.
-* [IOOS SOS Validator](https://github.com/ioos/ioos-sos-validator) for simple schema validation of SOS responses and templates 
+* [IOOS SOS Compliance Test Tool](https://github.com/ioos/ioos-sos-compliance-tests), a set of CTL ([compliance test language](http://portal.opengeospatial.org/files/?artifact_id=33085)) files and utility scripts for thorough standard validation and test of the IOOS SOS implementations.
+
+<!-- * [IOOS SOS Validator](https://github.com/ioos/ioos-sos-validator) for simple schema validation of SOS responses and templates --> 
 
 # Guidelines and specifications
 
