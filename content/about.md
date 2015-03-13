@@ -43,10 +43,20 @@ The [_**Guidance for Implementation of the Integrated Ocean Observing System (IO
 
 A [website](http://ioos.github.io/sos-guidelines) with documentation on using IOOS SOS v1.0 that includes:    
 
-* [Overview of SOS activities in IOOS](http://ioos.github.io/sos-guidelines/about/)  
+* [Overview of SOS activities in IOOS](http://ioos.github.io/sos-guidelines/about/)
+* [List of IOOS-specific compliance tests](http://ioos.github.io/sos-guidelines/doc/testing/sos_test_list_github_notoc_summary/)  
 * [IOOS SOS 1.0 Web Service Description Document](http://ioos.github.io/sos-guidelines/doc/wsdd/sos_wsdd_github_notoc/)   
-* [IOOS SOS Profile Templates](http://ioos.github.io/sos-guidelines/template/)  
-* [List of IOOS-specific compliance tests](http://ioos.github.io/sos-guidelines/doc/testing/sos_test_list_github_notoc_summary/)   
+* IOOS SOS Response Templates:
+  - [GetCapabilities](http://ioos.github.io/sos-guidelines/template/SOS-GetCapabilities/)
+  - [DescribeSensor for a network of platforms](http://ioos.github.io/sos-guidelines/template/SML-DescribeSensor-Network/)
+  - [DescribeSensor for a single platform](http://ioos.github.io/sos-guidelines/template/SML-DescribeSensor-Station/)
+  - GetObservation:
+    - [Generic OM part](http://ioos.github.io/sos-guidelines/template/OM-GetObservation/)
+    - [TimeSeries SWE Data Record’s static and dynamic fields for multiple stations with multiple sensors](http://ioos.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries/)
+    - [TimeSeries SWE Data Record’s static and dynamic fields for multiple stations with multiple sensors and QC elements](http://ioos.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries_QC/)
+    - [TimeSeries SWE Data Record’s static and dynamic fields for a single station with a single sensor](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-SingleProperty-TimeSeries/)
+    - [TimeSeriesProfile SWE Data Record’s static and dynamic fields for a station with profiling sensors](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/)
+    - [TimeSeriesProfile SWE Data Record’s static and dynamic fields for a station with profiling sensors and QC elements](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/)   
 
 ## netCDF and/or opendap guidelines
 * See [https://github.com/dpsnowden/netcdf-guidelines] for some initial ideas on what this needs to contain.
