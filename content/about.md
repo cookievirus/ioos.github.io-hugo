@@ -87,7 +87,7 @@ A [collection](http://ioos.github.io/animal-telemetry/) of documents describing 
 A [collection](http://ioos.github.io/biological-data-services/) of documents describing data services for biological objects:
 
 * [Data Enrollment Process](http://ioos.github.io/biological-data-services/biological-data-procedure/) proposed and supported by IOOS DMAC to support sharing and integration of aquatic biological data.
-* [IOOS Biological Observations Project](http://ioos.github.io/biological-data-services/biological-observations-project/) that addresses the DMAC requirements for biological observations standards and interoperability.
+* [IOOS Biological Observations Services](http://ioos.github.io/biological-data-services/biological-observations/) that address the DMAC requirements for biological observations standards and interoperability.
 
 # Contributing and changes
 
