@@ -15,7 +15,7 @@ url = "index.html"
 ## IOOS Catalog of Services and Datasets
 
 * [IOOS Web Catalog](http://catalog.ioos.us)
-* [GitHub repository](https://github.com/ioos/) that holds source codes and modules of the IOOS Catalog
+* [GitHub repository](https://github.com/ioos/catalog) that holds source codes and modules of the IOOS Catalog
 
 ## System Integration Test
 
