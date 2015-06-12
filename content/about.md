@@ -39,9 +39,9 @@ The [IOOS ncSOS](https://github.com/asascience-open/ncSOS) adds an OGC SOS servi
 
 The [_**Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem**_](http://www.ioos.noaa.gov/data/contribute_data.html) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
 
-## IOOS Service Registration Procedure Guidelines
+## IOOS Service Registration Guidelines
 
-Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The [IOOS Service Registration Procedure Guide](http://ioos.github.io/registry/) describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of metadata querying. 
+Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The [IOOS Service Registration Guide](http://ioos.github.io/registry/) describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of Registry querying for metadata. 
 
 ## SOS Guidelines
 
