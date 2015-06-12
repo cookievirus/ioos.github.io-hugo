@@ -52,9 +52,9 @@
 
 &lt;p&gt;The &lt;a href=&#34;http://www.ioos.noaa.gov/data/contribute_data.html&#34;&gt;&lt;em&gt;&lt;strong&gt;Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.&lt;/p&gt;
 
-&lt;h2 id=&#34;ioos-service-registration-procedure-guidelines:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;IOOS Service Registration Procedure Guidelines&lt;/h2&gt;
+&lt;h2 id=&#34;ioos-service-registration-guidelines:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;IOOS Service Registration Guidelines&lt;/h2&gt;
 
-&lt;p&gt;Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The &lt;a href=&#34;http://ioos.github.io/registry/&#34;&gt;IOOS Service Registration Procedure Guide&lt;/a&gt; describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of metadata querying.&lt;/p&gt;
+&lt;p&gt;Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The &lt;a href=&#34;http://ioos.github.io/registry/&#34;&gt;IOOS Service Registration Guide&lt;/a&gt; describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of Registry querying for metadata.&lt;/p&gt;
 
 &lt;h2 id=&#34;sos-guidelines:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;SOS Guidelines&lt;/h2&gt;
 
