@@ -84,7 +84,7 @@ A [collection](http://ioos.github.io/animal-telemetry/) of documents describing 
 
 * A brief [description](http://ioos.github.io/animal-telemetry/about/) of the National Animal Telemetry Network (ATN). 
 * [Strategic Plan And Recommendations](http://ioos.github.io/animal-telemetry/animal-telemetry-plan/) for a National ATN through U.S. IOOS
-* [IOOS Animal Acoustic Telemetry Data Project](http://ioos.github.io/animal-telemetry/aat_data_ioostech_wiki/) version 1.0.
+* [IOOS Animal Acoustic Telemetry (AAT) Data Project](http://ioos.github.io/animal-telemetry/aat_data_ioostech_wiki/).
 
 ## Biological Data Services 
 
