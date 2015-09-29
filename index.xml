@@ -56,6 +56,10 @@
 
 &lt;p&gt;Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The &lt;a href=&#34;http://ioos.github.io/registry/&#34;&gt;IOOS Service Registration Guide&lt;/a&gt; describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of Registry querying for metadata.&lt;/p&gt;
 
+&lt;h2 id=&#34;ioos-configuration-management:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;IOOS Configuration Management&lt;/h2&gt;
+
+&lt;p&gt;A &lt;a href=&#34;http://ioos.github.io/configuration-management&#34;&gt;collection of documents&lt;/a&gt; that describe the IOOS Configuration Management (CM) process, identify CM roles and responsibilities, resources, and formal processes and procedures to ensure that all proposed changes to major DMAC components and applications are evaluated and approved before implementation. The CM is a key process for maintaining the appropriate level of information assurance for DMAC implementation.&lt;/p&gt;
+
 &lt;h2 id=&#34;sos-guidelines:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;SOS Guidelines&lt;/h2&gt;
 
 &lt;p&gt;A &lt;a href=&#34;http://ioos.github.io/sos-guidelines&#34;&gt;website&lt;/a&gt; with documentation on deploying IOOS SOS v1.0 that includes:&lt;/p&gt;
