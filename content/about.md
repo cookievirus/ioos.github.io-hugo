@@ -43,6 +43,10 @@ The [_**Guidance for Implementation of the Integrated Ocean Observing System (IO
 
 Registration of the IOOS services allows the wide range of various clients to efficiently discover U.S. IOOS data. The [IOOS Service Registration Guide](http://ioos.github.io/registry/) describes the registration process, elaborates on IOOS Catalog and NGDC Registry interaction, and provides examples of Registry querying for metadata. 
 
+## IOOS Configuration Management
+
+A [collection of documents](http://ioos.github.io/configuration-management) that describe the IOOS Configuration Management (CM) process, identify CM roles and responsibilities, resources, and formal processes and procedures to ensure that all proposed changes to major DMAC components and applications are evaluated and approved before implementation. The CM is a key process for maintaining the appropriate level of information assurance for DMAC implementation.
+
 ## SOS Guidelines
 
 A [website](http://ioos.github.io/sos-guidelines) with documentation on deploying IOOS SOS v1.0 that includes:    
