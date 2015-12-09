@@ -37,7 +37,7 @@ The [IOOS ncSOS](https://github.com/asascience-open/ncSOS) adds an OGC SOS servi
 
 ## DMAC Implementation Guidelines for Data Providers
 
-The [_**Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem**_](http://www.ioos.noaa.gov/data/contribute_data.html) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
+The [Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem](http://www.ioos.noaa.gov/data/contribute_data.html) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
 
 ## IOOS Service Registration Guidelines
 
@@ -49,7 +49,7 @@ A [collection of documents](http://ioos.github.io/configuration-management) that
 
 ## SOS Guidelines
 
-A [website](http://ioos.github.io/sos-guidelines) with documentation on deploying IOOS SOS v1.0 that includes:    
+A [cookbook](http://ioos.github.io/sos-guidelines) on deploying the IOOS SOS v1.0 that includes:    
 
 * [Overview of SOS activities in IOOS](http://ioos.github.io/sos-guidelines/about/)
 * [List of IOOS-specific compliance tests](http://ioos.github.io/sos-guidelines/doc/testing/sos_test_list_github_notoc_summary/)  
@@ -66,21 +66,21 @@ A [website](http://ioos.github.io/sos-guidelines) with documentation on deployin
      * [TimeSeriesProfile SWE Data Record’s static and dynamic fields for a station with profiling sensors](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/)
      * [TimeSeriesProfile SWE Data Record’s static and dynamic fields for a station with profiling sensors and QC elements](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/)   
 
-## netCDF and/or opendap guidelines
-* See [https://github.com/dpsnowden/netcdf-guidelines] for some initial ideas on what this needs to contain.
+## netCDF and/or OPeNDAP guidelines
+* Brief incomplete [IOOS netCDF Guidelines](https://github.com/dpsnowden/netcdf-guidelines).
 * [IOOS Compliance Checker](https://github.com/ioos/compliance-checker) tool to check local/remote netCDF datasets against a variety of compliance standards. 
 
 ## Data encoding in CSV/TSV
 
-The [_**IOOS Convention for observation data encoding in CSV/TSV**_](http://ioos.github.io/ioos-csv-tsv/) document describes the rukes and constraints for encoding observation data as plain text Comma-Separated Values (CSV) or Tab-Separated Values (TSV).
+The [IOOS Convention for observation data encoding in CSV/TSV](http://ioos.github.io/ioos-csv-tsv/) document describes the rules and constraints for encoding observation data as plain text Comma-Separated Values (CSV) or Tab-Separated Values (TSV).
 
 ## Asset Identifiers
 
-The [_**IOOS Conventions for Observing Asset Identifiers**_](http://ioos.github.io/conventions-for-observing-asset-identifiers/) document describes the conventions used by the Integrated Ocean Observing System (IOOS) program to assign an identifier to IOOS-related observing assets including measurement stations, platforms and sensors.
+The [IOOS Conventions for Observing Asset Identifiers](http://ioos.github.io/conventions-for-observing-asset-identifiers/) document describes the conventions used by the Integrated Ocean Observing System (IOOS) program to assign an identifier to IOOS-related observing assets including measurement stations, platforms and sensors.
 
 ## Vocabularies
 
-A [collection of the Instructions and Guidelines for use of Controlled Vocabularies](https://github.com/ioos/vocabularies) in IOOS-compliant data services (the link temporarily leads to the GitHub repository itself rather then to the GitHub Pages).
+A [collection](https://github.com/ioos/vocabularies) of the guidelines on the Controlled Vocabularies usage in IOOS-compliant data services (the link temporarily leads to the GitHub repository itself rather then to the GitHub Pages).
 
 ## Data Services for Animal Telemetry
 
