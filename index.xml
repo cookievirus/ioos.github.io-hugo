@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> </title>
-    <link>http://ioos.github.io/</link>
+    <link>https://ioos.github.io/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2014</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>ABOUT: IOOS GitHub Pages</title>
-          <link>http://ioos.github.io/index.html</link>
+          <link>https://ioos.github.io/index.html</link>
           <pubDate>Mon, 04 Aug 2014 07:56:39 UTC</pubDate>
           <author></author>
-          <guid>http://ioos.github.io/index.html</guid>
+          <guid>https://ioos.github.io/index.html</guid>
           <description>
 
 &lt;h1 id=&#34;projects:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Projects&lt;/h1&gt;
@@ -90,9 +90,11 @@
 &lt;h2 id=&#34;netcdf-and-or-opendap-guidelines:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;netCDF and/or OPeNDAP guidelines&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Brief incomplete &lt;a href=&#34;https://github.com/dpsnowden/netcdf-guidelines&#34;&gt;IOOS netCDF Guidelines&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ioos.github.io/ioos-netcdf/&#34;&gt;IOOS netCDF Guidelines&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ioos/compliance-checker&#34;&gt;IOOS Compliance Checker&lt;/a&gt; tool to check local/remote netCDF datasets against a variety of compliance standards.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;!-- * (https://github.com/dpsnowden/netcdf-guidelines). --&gt;
 
 &lt;h2 id=&#34;data-encoding-in-csv-tsv:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Data encoding in CSV/TSV&lt;/h2&gt;
 
@@ -137,10 +139,10 @@
       
         <item>
           <title>Hosting on IOOS GitHub Pages Workflow</title>
-          <link>http://ioos.github.io/website_deployment_workflow_updated/</link>
+          <link>https://ioos.github.io/website_deployment_workflow_updated/</link>
           <pubDate>Tue, 04 Mar 2014 07:56:39 UTC</pubDate>
           <author></author>
-          <guid>http://ioos.github.io/website_deployment_workflow_updated/</guid>
+          <guid>https://ioos.github.io/website_deployment_workflow_updated/</guid>
           <description>
 
 &lt;h1 id=&#34;introduction:a4761be0533377a1c16ca0c552c0d383&#34;&gt;Introduction&lt;/h1&gt;
