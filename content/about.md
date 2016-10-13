@@ -67,9 +67,10 @@ A [cookbook](http://ioos.github.io/sos-guidelines) on deploying the IOOS SOS v1.
      * [TimeSeriesProfile SWE Data Record’s static and dynamic fields for a station with profiling sensors and QC elements](http://ioos.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/)   
 
 ## netCDF and/or OPeNDAP guidelines
-* Brief incomplete [IOOS netCDF Guidelines](https://github.com/dpsnowden/netcdf-guidelines).
+* [IOOS netCDF Guidelines](https://ioos.github.io/ioos-netcdf/)
 * [IOOS Compliance Checker](https://github.com/ioos/compliance-checker) tool to check local/remote netCDF datasets against a variety of compliance standards. 
 
+<!-- * (https://github.com/dpsnowden/netcdf-guidelines). -->
 ## Data encoding in CSV/TSV
 
 The [IOOS Convention for observation data encoding in CSV/TSV](http://ioos.github.io/ioos-csv-tsv/) document describes the rules and constraints for encoding observation data as plain text Comma-Separated Values (CSV) or Tab-Separated Values (TSV).

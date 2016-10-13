@@ -1,4 +1,4 @@
-baseurl = "http://ioos.github.io"
+baseurl = "https://ioos.github.io"
 CanonifyUrls = true
 contentdir = "content"
 layoutdir = "layouts"
