@@ -14,7 +14,7 @@ url = "index.html"
 
 ## IOOS Catalog of Services and Datasets
 
-* [The current IOOS Web Catalog](http://catalog.ioos.us)
+* [The IOOS Web Catalog](http://catalog.ioos.us) (current version)
 * [IOOS Catalog GitHub repository for documentation and issues](https://github.com/ioos/catalog)
 * Another [GitHub repository](https://github.com/ioos/service-monitor) that holds source codes and modules of the IOOS Service Monitor (old version of the IOOS Catalog)
 
