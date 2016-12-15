@@ -38,7 +38,7 @@ The [IOOS ncSOS](https://github.com/asascience-open/ncSOS) adds an OGC SOS servi
 
 ## DMAC Implementation Guidelines for Data Providers
 
-The [Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem](http://www.ioos.noaa.gov/data/contribute-data.html) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
+The [Guidance for Implementation of the Integrated Ocean Observing System (IOOS) Data Management and Communications (DMAC) Subsystem](https://ioos.noaa.gov/data/contribute-data/) describes the responsibilities of an IOOS Data Provider published on the official IOOS Web site.
 
 ## IOOS Service Registration Guidelines
 
